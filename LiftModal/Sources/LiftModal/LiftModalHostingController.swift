@@ -10,11 +10,13 @@ import SwiftUI
 import UIKit
 
 public final class LiftModalHostingController<Content: View>: UIViewController {
-
+    private let configuration: ModalConfiguration
     private let content: Content
     private var isPresented: Bool = true
 
-    public init(content: Content) {
+    public init(configuration: ModalConfiguration = .default,
+                content: Content) {
+        self.configuration = configuration
         self.content = content
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,8 +33,9 @@ public final class LiftModalHostingController<Content: View>: UIViewController {
                 return self.isPresented
             }, set: { newValue in
                 self.isPresented = newValue
-            }), 
+            }),
             content: content,
+            configuration: configuration,
             dismissAction: {
                 self.dismiss(animated: false)
             })

@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct ModalConfiguration {
 
-    static let `default` = ModalConfiguration(topPadding: 16,
+    public static let `default` = ModalConfiguration(topPadding: 16,
                                               dismissRatio: 0.3,
                                               cornerRadius: 16,
                                               dimmedOpacity: 0.3)
