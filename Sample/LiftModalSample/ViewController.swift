@@ -8,6 +8,8 @@
 import SwiftUI
 import UIKit
 
+import LiftModal
+
 class ViewController: UIViewController {
 
     private let button = UIButton()
@@ -15,11 +17,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.center = view.center
-        button.setTitle("눌러", for: .normal)
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        button.setTitle("Show Modal Button", for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     }
 
-    @objc private func didTapButton() { }
+    @objc private func didTapButton() {
+        let modalHostingController = LiftModalHostingController(content: ContentView())
+        self.presentModal(modalHostingController)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("11111")
+            Text("22222")
+            Text("3333")
+            Text("44444")
+            Text("55555")
+        }
+    }
 }
