@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03B56212DD82CB900CFC138 /* LiftModal in Frameworks */ = {isa = PBXBuildFile; productRef = B03B56202DD82CB900CFC138 /* LiftModal */; };
 		B0CCC4EC2DC6105100ABAB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4EB2DC6105100ABAB40 /* AppDelegate.swift */; };
 		B0CCC4EE2DC6105100ABAB40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4ED2DC6105100ABAB40 /* SceneDelegate.swift */; };
 		B0CCC4F02DC6105100ABAB40 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4EF2DC6105100ABAB40 /* UIKitViewController.swift */; };
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CCC5012DC6108800ABAB40 /* LiftModal in Frameworks */,
+				B03B56212DD82CB900CFC138 /* LiftModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 			name = LiftModalSample;
 			packageProductDependencies = (
 				B0CCC5002DC6108800ABAB40 /* LiftModal */,
+				B03B56202DD82CB900CFC138 /* LiftModal */,
 			);
 			productName = LiftModalSample;
 			productReference = B0CCC4E82DC6105100ABAB40 /* LiftModalSample.app */;
@@ -123,7 +126,7 @@
 			);
 			mainGroup = B0CCC4DF2DC6105100ABAB40;
 			packageReferences = (
-				B0CCC4FF2DC6108800ABAB40 /* XCLocalSwiftPackageReference "../LiftModal" */,
+				B03B561F2DD82CB900CFC138 /* XCRemoteSwiftPackageReference "LiftModal" */,
 			);
 			productRefGroup = B0CCC4E92DC6105100ABAB40 /* Products */;
 			projectDirPath = "";
@@ -372,14 +375,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B0CCC4FF2DC6108800ABAB40 /* XCLocalSwiftPackageReference "../LiftModal" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../LiftModal;
+/* Begin XCRemoteSwiftPackageReference section */
+		B03B561F2DD82CB900CFC138 /* XCRemoteSwiftPackageReference "LiftModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kane-young/LiftModal.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B03B56202DD82CB900CFC138 /* LiftModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B03B561F2DD82CB900CFC138 /* XCRemoteSwiftPackageReference "LiftModal" */;
+			productName = LiftModal;
+		};
 		B0CCC5002DC6108800ABAB40 /* LiftModal */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LiftModal;

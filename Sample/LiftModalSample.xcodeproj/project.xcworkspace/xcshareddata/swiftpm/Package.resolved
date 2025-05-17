@@ -1,0 +1,15 @@
+{
+  "originHash" : "6b74ac00971510bab76d79c3128a4003cf701b544709eeb98bcf6baa3043db81",
+  "pins" : [
+    {
+      "identity" : "liftmodal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kane-young/LiftModal.git",
+      "state" : {
+        "revision" : "ffc717f9e2a9d29fd7ca4c40a756f954fbe6b500",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
