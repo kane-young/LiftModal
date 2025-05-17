@@ -9,20 +9,26 @@
 /* Begin PBXBuildFile section */
 		B0CCC4EC2DC6105100ABAB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4EB2DC6105100ABAB40 /* AppDelegate.swift */; };
 		B0CCC4EE2DC6105100ABAB40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4ED2DC6105100ABAB40 /* SceneDelegate.swift */; };
-		B0CCC4F02DC6105100ABAB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4EF2DC6105100ABAB40 /* ViewController.swift */; };
+		B0CCC4F02DC6105100ABAB40 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC4EF2DC6105100ABAB40 /* UIKitViewController.swift */; };
 		B0CCC4F52DC6105200ABAB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CCC4F42DC6105200ABAB40 /* Assets.xcassets */; };
 		B0CCC4F82DC6105200ABAB40 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0CCC4F72DC6105200ABAB40 /* Base */; };
 		B0CCC5012DC6108800ABAB40 /* LiftModal in Frameworks */ = {isa = PBXBuildFile; productRef = B0CCC5002DC6108800ABAB40 /* LiftModal */; };
+		B0CCC5072DD060B600ABAB40 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC5062DD060B600ABAB40 /* MainTabBarController.swift */; };
+		B0CCC5092DD060DB00ABAB40 /* SwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC5082DD060DB00ABAB40 /* SwiftUIHostingController.swift */; };
+		B0CCC50B2DD0616400ABAB40 /* ModalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCC50A2DD0616400ABAB40 /* ModalContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0CCC4E82DC6105100ABAB40 /* LiftModalSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftModalSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CCC4EB2DC6105100ABAB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0CCC4ED2DC6105100ABAB40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0CCC4EF2DC6105100ABAB40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0CCC4EF2DC6105100ABAB40 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		B0CCC4F42DC6105200ABAB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0CCC4F72DC6105200ABAB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0CCC4F92DC6105200ABAB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0CCC5062DD060B600ABAB40 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B0CCC5082DD060DB00ABAB40 /* SwiftUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHostingController.swift; sourceTree = "<group>"; };
+		B0CCC50A2DD0616400ABAB40 /* ModalContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				B0CCC4EB2DC6105100ABAB40 /* AppDelegate.swift */,
 				B0CCC4ED2DC6105100ABAB40 /* SceneDelegate.swift */,
-				B0CCC4EF2DC6105100ABAB40 /* ViewController.swift */,
+				B0CCC4EF2DC6105100ABAB40 /* UIKitViewController.swift */,
+				B0CCC5082DD060DB00ABAB40 /* SwiftUIHostingController.swift */,
+				B0CCC50A2DD0616400ABAB40 /* ModalContentView.swift */,
+				B0CCC5062DD060B600ABAB40 /* MainTabBarController.swift */,
 				B0CCC4F42DC6105200ABAB40 /* Assets.xcassets */,
 				B0CCC4F62DC6105200ABAB40 /* LaunchScreen.storyboard */,
 				B0CCC4F92DC6105200ABAB40 /* Info.plist */,
@@ -142,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0CCC4F02DC6105100ABAB40 /* ViewController.swift in Sources */,
+				B0CCC4F02DC6105100ABAB40 /* UIKitViewController.swift in Sources */,
 				B0CCC4EC2DC6105100ABAB40 /* AppDelegate.swift in Sources */,
+				B0CCC50B2DD0616400ABAB40 /* ModalContentView.swift in Sources */,
+				B0CCC5092DD060DB00ABAB40 /* SwiftUIHostingController.swift in Sources */,
+				B0CCC5072DD060B600ABAB40 /* MainTabBarController.swift in Sources */,
 				B0CCC4EE2DC6105100ABAB40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

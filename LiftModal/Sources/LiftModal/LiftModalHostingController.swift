@@ -12,12 +12,15 @@ import UIKit
 public final class LiftModalHostingController<Content: View>: UIViewController {
     private let configuration: ModalConfiguration
     private let content: Content
+    private let onDismiss: (() -> Void)?
     private var isPresented: Bool = true
 
     public init(configuration: ModalConfiguration = .default,
-                content: Content) {
+                content: Content,
+                onDismiss: (() -> Void)? = nil) {
         self.configuration = configuration
         self.content = content
+        self.onDismiss = onDismiss
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -37,7 +40,10 @@ public final class LiftModalHostingController<Content: View>: UIViewController {
             content: content,
             configuration: configuration,
             dismissAction: {
-                self.dismiss(animated: false)
+                self.dismiss(animated: false,
+                             completion: { [weak self] in
+                    self?.onDismiss?()
+                })
             })
         let hostingController = UIHostingController(rootView: rootView)
         addChild(hostingController)

@@ -1,16 +1,16 @@
 //
-//  ViewController.swift
+//  UIKitViewController.swift
 //  LiftModalSample
 //
 //  Created by 이영우 on 5/3/25.
 //
 
-import SwiftUI
 import UIKit
 
 import LiftModal
 
-class ViewController: UIViewController {
+/// A sample ViewController that demonstrates presenting a modal view.
+final class UIKitViewController: UIViewController {
 
     private let button = UIButton()
 
@@ -29,19 +29,7 @@ class ViewController: UIViewController {
     }
 
     @objc private func didTapButton() {
-        let modalHostingController = LiftModalHostingController(content: ContentView())
+        let modalHostingController = LiftModalHostingController(content: ModalContentView())
         self.presentModal(modalHostingController)
-    }
-}
-
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Text("11111")
-            Text("22222")
-            Text("3333")
-            Text("44444")
-            Text("55555")
-        }
     }
 }
