@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "LiftModal",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v13)
     ],
     products: [
         .library(
